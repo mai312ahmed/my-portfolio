@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Mai.Dev</span><span class="logo-accent">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-i18n="nav-home">Home</a></li>
+                <li><a href="#about" data-i18n="nav-about">About</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav-work">Work</a></li>
+                <li><a href="#contact" class="btn btn-outline" data-i18n="nav-talk">Let's Talk</a></li>
+                
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="greeting" data-i18n="hero-greeting">Hi, I'm <span class="highlight">Mai Abdalla</span></p>
+                <h1 class="hero-title" data-i18n="hero-title">Crafting Elegant<br> <span class="gradient-text">Flutter & Dart</span> Apps</h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Software Engineer specializing in cross-platform mobile development for Android
+                    & iOS. Turning complex requirements into scalable, user-friendly mobile solutions.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                                        <a href="https://github.com/mai312ahmed" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card main-card">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code><span class="keyword">class</span> <span class="class-name">Developer</span> <span class="keyword">extends</span> <span class="class-name">Human</span> {
+  <span class="type">String</span> role = <span class="string">'Flutter Engineer'</span>;
+  <span class="type">List</span>&lt;<span class="type">String</span>&gt; skills = [
+    <span class="string">'Dart'</span>, <span class="string">'Flutter'</span>, 
+    <span class="string">'Firebase'</span>, <span class="string">'UI/UX'</span>
+  ];
+  
+  <span class="type">void</span> <span class="function">innovate</span>() {
+    <span class="keyword">while</span>(alive) { 
+      code(); 
+      coffee(); 
+    }
+  }
+}</code></pre>
+                    </div>
+                </div>
+                <!-- Floating elements for visual interest -->
+                <div class="floating-icon flutter-icon"><i class="fa-brands fa-flutter"></i></div>
+                <div class="floating-icon dart-icon">Dart</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="gradient-text">Summary</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-tagline">I believe that great code is invisible, but a <span class="gradient-text">great experience</span> is unforgettable.</h3>
+                    <p>My approach to development goes beyond just making things work. I focus on the <strong>architectural integrity</strong> of every project, ensuring that the apps I build are not only beautiful but also scalable and easy to maintain.</p>
+                    <p>With a deep commitment to <strong>Clean Code</strong> and <strong>Clean Architecture</strong>, I craft mobile experiences that feel fast, intuitive, and reliable. Over the past 2+ years, I have refined my process for building cross-platform apps that sit at the intersection of performance and aesthetics.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <h3 class="stat-number gradient-text">2+</h3>
+                            <p class="stat-label">Years of Focus</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="stat-number gradient-text">7+</h3>
+                            <p class="stat-label">Projects Built</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <div class="image-wrapper small-avatar">
+                        <img src="assets/mai-avatar.png" alt="Mai Abdalla">
+                        <div class="experience-badge">
+                            <i class="fa-brands fa-flutter flutter-icon-badge"></i>
+                            <span>Flutter Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Added) -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date" data-i18n="exp-gtg-date">Jul 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp-gtg-title">Mobile App Developer</h3>
+                        <h4 data-i18n="exp-gtg-company">Gulf Tech Group | Dubai, UAE</h4>
+                        <ul>
+                            <li data-i18n="exp-gtg-task1">Architect and develop high-performance mobile applications using Flutter & Dart.</li>
+                            <li data-i18n="exp-gtg-task2">Boosted app performance by 40% through advanced code optimization and efficient state management.</li>
+                            <li data-i18n="exp-gtg-task3">Reduced memory consumption by implementing optimized caching strategies and asset management.</li>
+                            <li data-i18n="exp-gtg-task4">Handle end-to-end deployment cycles, including App Store/Play Store publishing and continuous updates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date" data-i18n="exp-morph-date">Mar 2024 - Mar 2025</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp-morph-title">Flutter Developer (Contract)</h3>
+                        <h4 data-i18n="exp-morph-company">Morph | Saudi Arabia (Remote)</h4>
+                        <ul>
+                            <li data-i18n="exp-morph-task1">Developed and refined robust cross-platform mobile applications for Android and iOS platforms.</li>
+                            <li data-i18n="exp-morph-task2">Architected scalable solutions using Clean Architecture and MVVM patterns to ensure code maintainability.</li>
+                            <li data-i18n="exp-morph-task3">Integrated complex RESTful APIs and managed state efficiently using advanced state management techniques.</li>
+                            <li data-i18n="exp-morph-task4">Collaborated remotely to deliver high-quality features, focusing on UI polish and performance optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date" data-i18n="exp-free-date">Nov 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp-free-title">Freelance Flutter Developer</h3>
+                        <ul>
+                            <li data-i18n="exp-free-task1">Delivered end-to-end mobile solutions for diverse clients, covering full-lifecycle development from early requirements to deployment.</li>
+                            <li data-i18n="exp-free-task2">Expertly integrated diverse third-party services including secure payment gateways, Firebase analytics, and real-time cloud messaging.</li>
+                            <li data-i18n="exp-free-task3">Consistently optimized application performance, focusing on smooth UI transitions, efficient memory management, and reduced load times.</li>
+                            <li data-i18n="exp-free-task4">Provided technical consultation to startups, helping translate business concepts into scalable and high-quality mobile products.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-line mx-auto"></div>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fa-brands fa-flutter accent-icon"></i> Core Tech</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info"><span>Flutter</span><span>90%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>Dart</span><span>85%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>State Management (Provider/Bloc)</span><span>80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fas fa-database accent-icon"></i> Backend & DB</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info"><span>Firebase</span><span>80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>REST APIs</span><span>80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>Hive / Local Storage</span><span>80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fas fa-tools accent-icon"></i> Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-info"><span>Git / GitHub</span><span>80%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>Figma / UI Design</span><span>85%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info"><span>CI/CD</span><span>50%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line mx-auto"></div>
+                <p class="section-subtitle">A selection of my best work in mobile and web development</p>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded from Firebase here -->
+                <div class="loading-spinner" style="grid-column: 1/-1; text-align: center; padding: 3rem;">
+                    <i class="fas fa-spinner fa-spin fa-3x" style="color: var(--accent-color);"></i>
+                    <p style="margin-top: 1rem;">Loading amazing projects...</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4" style="text-align: center; margin-top: 3rem;">
+                                <a href="https://github.com/mai312ahmed" class="btn btn-outline" target="_blank" data-i18n="view-more-github">View More on
+                    GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title" data-i18n="testimonials-title">What <span class="gradient-text">Clients</span> Say</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="testimonials-grid" id="testimonials-grid">
+                <!-- Testimonials will be loaded from Firebase here -->
+                <div class="loading-spinner" style="grid-column: 1/-1; text-align: center; padding: 3rem;">
+                    <i class="fas fa-spinner fa-spin fa-3x" style="color: var(--accent-color);"></i>
+                </div>
+            </div>
+
+            <div class="text-center mt-4" style="text-align: center; margin-top: 1rem;">
+                <button id="open-review-modal" class="btn btn-primary" data-i18n="add-review-btn">Add My Review <i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Modal -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="modal-title">Share Your <span class="gradient-text">Experience</span></h2>
+            <form id="testimonialForm" class="contact-form mt-4">
+                <div class="form-group">
+                    <input type="text" id="review-writer" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label style="display: block; margin-bottom: 0.5rem; opacity: 0.8;" data-i18n="rating-label">Your Rating:</label>
+                    <div class="star-rating-input" id="star-rating-input">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                    <input type="hidden" id="review-rating" value="5">
+                </div>
+                <div class="form-group">
+                    <textarea id="review-content" placeholder="Share your feedback..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-i18n="submit-review">Submit Review <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-card project-details-modal">
+            <span class="close-modal" id="close-project-modal">&times;</span>
+            <div id="project-details-content">
+                <!-- Content will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Detail Modal -->
+    <div id="testimonial-detail-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="close-testimonial-detail-modal">&times;</span>
+            <div id="testimonial-detail-content">
+                <!-- Full content will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line mx-auto"></div>
+                <p class="section-subtitle">Have a project in mind or looking for a Flutter developer? I'd love to talk.
+                </p>
+            </div>
+
+            <div class="contact-container glass-card">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's build something amazing together</h3>
+                    <p class="contact-text">I'm currently available for freelance work and full-time opportunities. Drop
+                        me a message and I'll get back to you within 24 hours.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:mai96oda@gmail.com">mai96oda@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>+971 56 698 2496</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Dubai, UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact-send">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-text">Mai.Dev</span><span class="logo-accent">.</span>
+            </div>
+            <div class="footer-socials">
+                                <a href="https://github.com/mai312ahmed" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mai-ahmed-21209b155/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copyright">© 2026 Mai Abdalla. All rights reserved. Built with passion & Flutter vibes.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+                import { getFirestore, collection, getDocs, addDoc, serverTimestamp, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAVGQRUb0oMosSU3l_-RZvl5dGwhKU32Ww",
+            authDomain: "portfolio-mai-3126.firebaseapp.com",
+            projectId: "portfolio-mai-3126",
+            storageBucket: "portfolio-mai-3126.firebasestorage.app",
+            messagingSenderId: "398246676556",
+            appId: "1:398246676556:web:96e88d630986424adbcce9",
+            measurementId: "G-REKDTB4W25"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Make db available globally for script.js
+        window.db = db;
+                window.firebaseDocs = { collection, getDocs, addDoc, serverTimestamp, query, orderBy };
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
