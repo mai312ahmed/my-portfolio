@@ -78,21 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
             'rating-label': 'Your Rating:',
             'about-p1': 'Hello! I\'m <span class="highlight">Mai Abdalla</span>, a passionate Flutter Developer with a Bachelor\'s degree in Computer Science from the University of Khartoum. I have over 2 years of proven experience in building scalable cross-platform mobile applications.',
             'about-p2': 'My expertise lies heavily in <span class="highlight">Flutter</span> and <span class="highlight">Dart</span>, with a strong background in UI/UX design, RESTful API integration, and robust state management using <span class="highlight">BLoC</span> and <span class="highlight">Cubit</span>.',
-                        'about-p3': 'I architect applications using <span class="highlight">Clean Architecture</span> and <span class="highlight">MVVM</span> patterns to ensure maintainability and high performance.',
+            'about-p3': 'I architect applications using <span class="highlight">Clean Architecture</span> and <span class="highlight">MVVM</span> patterns to ensure maintainability and high performance.',
             'exp-gtg-date': 'Jul 2025 - Present',
             'exp-gtg-title': 'Mobile App Developer',
             'exp-gtg-company': 'Gulf Tech Group | Dubai, UAE',
             'exp-gtg-task1': 'Architect and develop high-performance mobile applications using Flutter & Dart.',
             'exp-gtg-task2': 'Boosted app performance by 40% through advanced code optimization and efficient state management.',
             'exp-gtg-task3': 'Reduced memory consumption by implementing optimized caching strategies and asset management.',
-                        'exp-gtg-task4': 'Handle end-to-end deployment cycles, including App Store/Play Store publishing and continuous updates.',
+            'exp-gtg-task4': 'Handle end-to-end deployment cycles, including App Store/Play Store publishing and continuous updates.',
             'exp-morph-date': 'Mar 2024 - Mar 2025',
-                        'exp-morph-title': 'Flutter Developer (Contract)',
-                        'exp-morph-company': 'Morph | Saudi Arabia (Remote)',
+            'exp-morph-title': 'Flutter Developer (Contract)',
+            'exp-morph-company': 'Morph | Saudi Arabia (Remote)',
             'exp-morph-task1': 'Developed and refined robust cross-platform mobile applications for Android and iOS platforms.',
             'exp-morph-task2': 'Architected scalable solutions using Clean Architecture and MVVM patterns to ensure code maintainability.',
             'exp-morph-task3': 'Integrated complex RESTful APIs and managed state efficiently using advanced state management techniques.',
-                        'exp-morph-task4': 'Collaborated remotely to deliver high-quality features, focusing on UI polish and performance optimization.',
+            'exp-morph-task4': 'Collaborated remotely to deliver high-quality features, focusing on UI polish and performance optimization.',
             'exp-free-date': 'Nov 2023 - Present',
             'exp-free-title': 'Freelance Flutter Developer',
             'exp-free-task1': 'Delivered end-to-end mobile solutions for diverse clients, covering full-lifecycle development from early requirements to deployment.',
@@ -116,21 +116,21 @@ document.addEventListener('DOMContentLoaded', () => {
             'rating-label': 'تقييمك:',
             'about-p1': 'مرحباً! أنا <span class="highlight">مي عبدالله</span>، مطورة تطبيقات فلاتر شغوفة، حاصلة على درجة البكالوريوس في علوم الحاسوب من جامعة الخرطوم. لدي خبرة تزيد عن سنتين في بناء تطبيقات جوال قابلة للتوسع وعابرة للأنظمة.',
             'about-p2': 'تتركز خبرتي بشكل كبير في <span class="highlight">Flutter</span> و <span class="highlight">Dart</span>، مع خلفية قوية في تصميم واجهات المستخدم (UI/UX)، وربط تطبيقات الـ RESTful API، وإدارة الحالة (State Management) باستخدام <span class="highlight">BLoC</span> و <span class="highlight">Cubit</span>.',
-                        'about-p3': 'أقوم ببناء التطبيقات باستخدام أنماط <span class="highlight">Clean Architecture</span> و <span class="highlight">MVVM</span> لضمان سهولة الصيانة والأداء العالي.',
+            'about-p3': 'أقوم ببناء التطبيقات باستخدام أنماط <span class="highlight">Clean Architecture</span> و <span class="highlight">MVVM</span> لضمان سهولة الصيانة والأداء العالي.',
             'exp-gtg-date': 'يوليو 2025 - الحاضر',
             'exp-gtg-title': 'مطورة تطبيقات موبايل',
             'exp-gtg-company': 'Gulf Tech Group | دبي، الإمارات العربية المتحدة',
             'exp-gtg-task1': 'تصميم وبناء تطبيقات موبايل عالية الأداء باستخدام Flutter و Dart.',
             'exp-gtg-task2': 'تسريع أداء التطبيقات بنسبة 40% من خلال تحسين الكود وإدارة الحالة الفعالة.',
             'exp-gtg-task3': 'تقليل استهلاك الذاكرة عبر تنفيذ استراتيجيات التخزين المؤقت المتقدمة وتحسين الأصول.',
-                        'exp-gtg-task4': 'إدارة دورة حياة التطبيق بالكامل، بما في ذلك الرفع على المتاجر والتحديثات المستمرة.',
+            'exp-gtg-task4': 'إدارة دورة حياة التطبيق بالكامل، بما في ذلك الرفع على المتاجر والتحديثات المستمرة.',
             'exp-morph-date': 'مارس 2024 - مارس 2025',
-                        'exp-morph-title': 'مطورة تطبيقات فلاتر (تعاقد بالمشروع)',
-                        'exp-morph-company': 'Morph | المملكة العربية السعودية (عن بعد)',
+            'exp-morph-title': 'مطورة تطبيقات فلاتر (تعاقد بالمشروع)',
+            'exp-morph-company': 'Morph | المملكة العربية السعودية (عن بعد)',
             'exp-morph-task1': 'تطوير وتحسين تطبيقات موبايل قوية عابرة للأنظمة لمنصات الأندرويد والآيفون.',
             'exp-morph-task2': 'بناء حلول برمجية قابلة للتوسع باستخدام أنماط Clean Architecture و MVVM لضمان سهولة الصيانة.',
             'exp-morph-task3': 'ربط برمجيات RESTful API المعقدة وإدارة الحالة بكفاءة باستخدام تقنيات إدارة الحالة المتقدمة.',
-                        'exp-morph-task4': 'التعاون عن بعد لتقديم ميزات عالية الجودة، مع التركيز على دقة الواجهات وتحسين الأداء.',
+            'exp-morph-task4': 'التعاون عن بعد لتقديم ميزات عالية الجودة، مع التركيز على دقة الواجهات وتحسين الأداء.',
             'exp-free-date': 'نوفمبر 2023 - الحاضر',
             'exp-free-title': 'مطورة تطبيقات فلاتر (عمل حر)',
             'exp-free-task1': 'تقديم حلول موبايل شاملة لمجموعة متنوعة من العملاء، تغطي دورة التطوير الكاملة من المتطلبات الأولية وحتى الرفع على المتاجر.',
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const langBtn = document.getElementById('lang-switch');
-    
+
     if (langBtn) {
         langBtn.addEventListener('click', () => {
             currentLang = currentLang === 'en' ? 'ar' : 'en';
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (starsContainer) {
         const stars = starsContainer.querySelectorAll('i');
-        
+
         // Function to set stars
         const setStars = (value) => {
             stars.forEach(s => {
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setStars(5);
 
         stars.forEach(star => {
-            star.addEventListener('click', function() {
+            star.addEventListener('click', function () {
                 const value = parseInt(this.getAttribute('data-value'));
                 ratingInput.value = value;
                 setStars(value);
@@ -324,30 +324,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const { collection, getDocs, query, orderBy } = window.firebaseDocs;
             const q = query(collection(window.db, "projects"), orderBy("order", "asc"));
             const querySnapshot = await getDocs(q);
-            
+
             if (projectsGrid) projectsGrid.innerHTML = '';
 
-            // Prepend Featured "Coming Soon" Project
-            const featuredProject = {
-                title: { en: "Upcoming Project", ar: "مشروع جديد" },
-                description: { en: "Coming Soon... An innovative mobile application developed for high-performance impact. Currently live on stores, official announcement is on the way.", ar: "قريباً... تطبيق موبايل مبتكر تم تطويره لأداء عالٍ وتأثير قوي. متوفر حالياً على المتاجر، والإعلان الرسمي قريباً." },
-                logo: "https://res.cloudinary.com/ddipbg15n/image/upload/v1775571075/1024x1024_gbtauc.png",
-                status: { en: "Launching", ar: "قيد الإطلاق" },
-                technologies: { 
-                    en: ["Flutter", "Dart", "Bloc Cubit", "Chat", "Deep Link", "Notification"], 
-                    ar: ["فلاتر", "دارت", "Bloc Cubit", "شات", "Deep Link", "تنبيهات"] 
-                }
-            };
-            const featuredCard = createProjectCard(featuredProject);
-            if (projectsGrid) projectsGrid.appendChild(featuredCard);
-
-            if (querySnapshot.empty && !featuredProject) {
+            if (querySnapshot.empty) {
                 projectsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center;">${currentLang === 'ar' ? 'لا توجد مشاريع حالياً.' : 'No projects found.'}</p>`;
                 return;
             }
 
             querySnapshot.forEach((doc) => {
-                const data = doc.data();
+                const data = { ...doc.data(), id: doc.id };
                 const projectCard = createProjectCard(data);
                 if (projectsGrid) projectsGrid.appendChild(projectCard);
             });
@@ -367,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const title = project.title ? (project.title[currentLang] || project.title.en || project.title) : 'Untitled';
         const description = project.description ? (project.description[currentLang] || project.description.en || project.description) : '';
         const statusText = project.status && typeof project.status === 'object' ? (project.status[currentLang] || project.status.en) : (project.status || '');
-        
+
         // Use localized technologies array for short tags
         const techArray = project.technologies ? (project.technologies[currentLang] || project.technologies.en || []) : (project.tags || []);
         const techHtml = techArray.map(tech => `<span class="tag">${tech}</span>`).join('');
@@ -386,13 +372,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 3. Set Thumbnail Content (Priority: Logo > Screenshot > Icon)
         let thumbContent = `<div class="project-placeholder"><i class="${project.icon || 'fas fa-rocket'}"></i></div>`;
-        
+
         if (logoUrl && typeof logoUrl === 'string') {
             thumbContent = `<div class="project-placeholder logo-container"><img src="${logoUrl}" alt="${title}" class="project-logo-small"></div>`;
         } else if (firstScreenshot) {
             thumbContent = `<img src="${firstScreenshot}" alt="${title}" class="project-img-real">`;
         }
-        
+
         // Generate Store Links for overlay
         let linksHtml = '';
         const links = project.projectLinks || project.links;
@@ -448,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const features = project.features ? (project.features[currentLang] || project.features.en || []) : [];
         const languages = project.languages ? (project.languages[currentLang] || project.languages.en || (typeof project.languages === 'string' ? project.languages : '')) : '';
         const status = project.status ? (project.status[currentLang] || project.status.en || project.status) : 'Active';
-        
+
         // 1. Images Gallery
         let galleryHtml = '';
         if (project.imageUrls && project.imageUrls.length > 0) {
@@ -480,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 4. Dynamic Metadata (Capture all other fields from Firebase)
         const excludedKeys = ['title', 'description', 'features', 'languages', 'imageUrls', 'status', 'icon', 'logo', 'order', 'tags', 'technologies', 'projectLinks', 'links', 'id', '1', '2', '3', '4', '5'];
         let additionalMetadataHtml = '';
-        
+
         Object.keys(project).forEach(key => {
             if (!excludedKeys.includes(key)) {
                 let val = project[key];
@@ -488,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof val === 'object' && val !== null && (val.en || val.ar)) {
                     val = val[currentLang] || val.en;
                 }
-                
+
                 if (val && (typeof val === 'string' || typeof val === 'number')) {
                     const displayKey = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
                     additionalMetadataHtml += `<div class="meta-item"><strong>${displayKey}:</strong> <span>${val}</span></div>`;
@@ -552,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const { collection, getDocs } = window.firebaseDocs;
             const querySnapshot = await getDocs(collection(window.db, "testimonails"));
-            
+
             if (testimonialsGrid) {
                 testimonialsGrid.innerHTML = '';
                 stopAutoScroll(); // Clear any existing interval
@@ -628,10 +614,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let scrollInterval;
     function startAutoScroll() {
         if (!testimonialsGrid) return;
-        
+
         scrollInterval = setInterval(() => {
             testimonialsGrid.scrollLeft += 1;
-            
+
             // Loop back to start
             if (testimonialsGrid.scrollLeft >= testimonialsGrid.scrollWidth - testimonialsGrid.clientWidth - 1) {
                 testimonialsGrid.scrollLeft = 0;
