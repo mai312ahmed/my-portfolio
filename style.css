@@ -1789,3 +1789,67 @@ body.rtl .view-details-btn::after {
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
 }
+
+/* =========================================
+   About Section - Value Prop Cards
+   ========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.value-prop-card {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.8rem;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(10px);
+    text-align: left;
+}
+
+body.rtl .value-prop-card {
+    text-align: right;
+}
+
+.value-prop-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(30, 41, 59, 0.6);
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.value-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 5px 15px rgba(2, 132, 199, 0.3);
+}
+
+.value-prop-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-main);
+}
+
+.value-prop-card p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
