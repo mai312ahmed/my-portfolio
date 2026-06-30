@@ -477,31 +477,7 @@
         </div>
     </footer>
 
-    <!-- Firebase SDKs -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        import { getFirestore, collection, getDocs, addDoc, serverTimestamp, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyAVGQRUb0oMosSU3l_-RZvl5dGwhKU32Ww",
-            authDomain: "portfolio-mai-3126.firebaseapp.com",
-            projectId: "portfolio-mai-3126",
-            storageBucket: "portfolio-mai-3126.firebasestorage.app",
-            messagingSenderId: "398246676556",
-            appId: "1:398246676556:web:96e88d630986424adbcce9",
-            measurementId: "G-REKDTB4W25"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-
-        // Make db available globally for script.js
-        window.db = db;
-        window.firebaseDocs = { collection, getDocs, addDoc, serverTimestamp, query, orderBy };
-    </script>
+    <!-- Firebase SDKs (Configured in script.js) -->
 
     <!-- Custom JS -->
     <script src="script.js" type="module"></script>

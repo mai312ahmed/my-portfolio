@@ -1,3 +1,25 @@
+// Import Firebase modules directly inside the script
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getFirestore, collection, getDocs, addDoc, serverTimestamp, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+// Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyAVGQRUb0oMosSU3l_-RZvl5dGwhKU32Ww",
+    authDomain: "portfolio-mai-3126.firebaseapp.com",
+    projectId: "portfolio-mai-3126",
+    storageBucket: "portfolio-mai-3126.firebasestorage.app",
+    messagingSenderId: "398246676556",
+    appId: "1:398246676556:web:96e88d630986424adbcce9",
+    measurementId: "G-REKDTB4W25"
+};
+
+// Initialize Firebase and set global handles
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.db = db;
+window.firebaseDocs = { collection, getDocs, addDoc, serverTimestamp, query, orderBy };
+
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
 
