@@ -106,11 +106,11 @@ export const Navbar: React.FC = () => {
           </li>
           <li>
             <a
-              href={isHomePage ? '#experience' : '/#experience'}
-              className={isHomePage && activeSection === 'experience' ? 'active' : ''}
-              onClick={(e) => handleNavLinkClick(e, '#experience')}
+              href={isHomePage ? '#projects' : '/#projects'}
+              className={isHomePage && activeSection === 'projects' ? 'active' : ''}
+              onClick={(e) => handleNavLinkClick(e, '#projects')}
             >
-              {t('nav-experience')}
+              {t('nav-work')}
             </a>
           </li>
           <li>
@@ -124,11 +124,11 @@ export const Navbar: React.FC = () => {
           </li>
           <li>
             <a
-              href={isHomePage ? '#projects' : '/#projects'}
-              className={isHomePage && activeSection === 'projects' ? 'active' : ''}
-              onClick={(e) => handleNavLinkClick(e, '#projects')}
+              href={isHomePage ? '#experience' : '/#experience'}
+              className={isHomePage && activeSection === 'experience' ? 'active' : ''}
+              onClick={(e) => handleNavLinkClick(e, '#experience')}
             >
-              {t('nav-work')}
+              {t('nav-experience')}
             </a>
           </li>
           <li>

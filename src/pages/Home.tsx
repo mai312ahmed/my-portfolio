@@ -35,10 +35,10 @@ export const Home: React.FC = () => {
     <>
       <Navbar />
       <Hero />
-      <Projects />
-      <Experience />
-      <Skills />
       <About />
+      <Projects />
+      <Skills />
+      <Experience />
       <Testimonials />
       <ContactForm />
       <Footer />
