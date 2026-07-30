@@ -27,6 +27,7 @@ export interface Project {
   icon?: string;
   features?: LocalizedArray<string>;
   languages?: LocalizedString;
+  client?: LocalizedString;
   projectLinks?: ProjectLinks;
   links?: ProjectLinks;
 }
