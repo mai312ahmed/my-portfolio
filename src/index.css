@@ -153,7 +153,7 @@ h6 {
 }
 
 .small-avatar {
-    max-width: 250px;
+    max-width: 320px;
     margin: 0 auto;
     position: relative;
     /* Important for the badge to stay attached */
