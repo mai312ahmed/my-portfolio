@@ -119,7 +119,15 @@ export const ProjectDetails: React.FC = () => {
   return (
     <div className="project-details-page-wrapper">
       <Navbar />
-      <div className="container">
+      <div className="container" style={{ paddingTop: '100px' }}>
+        <div className="back-btn-container" style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
+          <button onClick={() => navigate('/')} className="btn back-to-home-btn">
+            <i className={language === 'ar' ? 'fas fa-arrow-right' : 'fas fa-arrow-left'}></i>
+            <span style={{ margin: language === 'ar' ? '0 0.5rem 0 0' : '0 0 0 0.5rem' }}>
+              {language === 'ar' ? 'العودة للرئيسية' : 'Back to Home'}
+            </span>
+          </button>
+        </div>
         {/* Full-Page Premium 2-Column Dashboard */}
         <div className="glass-card project-details-page-card">
           <div className="project-details-grid">
