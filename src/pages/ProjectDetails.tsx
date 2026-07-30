@@ -90,7 +90,9 @@ export const ProjectDetails: React.FC = () => {
         val = val[language] || val.en;
       }
       if (val && (typeof val === 'string' || typeof val === 'number')) {
-        const displayLabel = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
+        const transKey = `project-meta-${key.toLowerCase()}`;
+        const translatedLabel = t(transKey as any);
+        const displayLabel = translatedLabel !== transKey ? translatedLabel : key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
         additionalMetadata.push({ label: displayLabel, value: String(val) });
       }
     }

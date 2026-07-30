@@ -84,7 +84,13 @@ export const translations = {
     'form-review-ph': 'Share your feedback...',
     'form-saving': 'Saving...',
     'form-saved': 'Thank you!',
-    'footer-text': '© 2026 Mai Abdalla. All rights reserved. Built with passion & React + Flutter vibes.'
+    'footer-text': '© 2026 Mai Abdalla. All rights reserved. Built with passion & React + Flutter vibes.',
+    'project-meta-client': 'Client',
+    'project-meta-role': 'Role',
+    'project-meta-duration': 'Duration',
+    'project-meta-date': 'Date',
+    'project-meta-category': 'Category',
+    'project-meta-tools': 'Tools'
   },
   ar: {
     'nav-home': 'الرئيسية',
@@ -171,7 +177,13 @@ export const translations = {
     'form-review-ph': 'شاركنا رأيك وتجربتك...',
     'form-saving': 'جاري الحفظ...',
     'form-saved': 'شكراً لرأيك!',
-    'footer-text': '© 2026 مي عبدالله. جميع الحقوق محفوظة. صُنع بشغف وبروح فلاتر ورياكت.'
+    'footer-text': '© 2026 مي عبدالله. جميع الحقوق محفوظة. صُنع بشغف وبروح فلاتر ورياكت.',
+    'project-meta-client': 'العميل',
+    'project-meta-role': 'الدور',
+    'project-meta-duration': 'المدة',
+    'project-meta-date': 'التاريخ',
+    'project-meta-category': 'التصنيف',
+    'project-meta-tools': 'الأدوات'
   }
 };
 export type Language = 'en' | 'ar';

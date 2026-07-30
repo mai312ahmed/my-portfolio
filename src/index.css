@@ -64,9 +64,6 @@ body.rtl {
     text-align: right;
 }
 
-body.rtl .nav-links {
-    flex-direction: row-reverse;
-}
 
 body.rtl .hero-content {
     text-align: right;
