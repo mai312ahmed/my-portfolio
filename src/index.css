@@ -2530,13 +2530,17 @@ body.rtl .back-to-home-btn:hover i {
 .admin-tag-bubble {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
+    justify-content: space-between;
+    gap: 0.6rem;
     background: rgba(56, 189, 248, 0.15);
     border: 1px solid rgba(56, 189, 248, 0.35);
     color: #e2e8f0;
-    padding: 0.35rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    max-width: 100%;
+    word-break: break-word;
     transition: all 0.2s ease;
     animation: fadeInTag 0.2s ease;
 }

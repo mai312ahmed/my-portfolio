@@ -169,7 +169,7 @@ export const AdminDashboard: React.FC = () => {
   const handleAddFeatureEn = () => {
     const trimmed = newFeatureEn.trim();
     if (trimmed) {
-      const items = trimmed.split(',').map((s) => s.trim()).filter((s) => s);
+      const items = trimmed.split(/\r?\n/).map((s) => s.trim()).filter((s) => s);
       setFeaturesEn([...featuresEn, ...items]);
       setNewFeatureEn('');
     }
@@ -178,7 +178,7 @@ export const AdminDashboard: React.FC = () => {
   const handleAddFeatureAr = () => {
     const trimmed = newFeatureAr.trim();
     if (trimmed) {
-      const items = trimmed.split(',').map((s) => s.trim()).filter((s) => s);
+      const items = trimmed.split(/\r?\n/).map((s) => s.trim()).filter((s) => s);
       setFeaturesAr([...featuresAr, ...items]);
       setNewFeatureAr('');
     }
