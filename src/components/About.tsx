@@ -45,7 +45,7 @@ export const About: React.FC = () => {
           
           <div className="about-image-container">
             <div className="image-wrapper small-avatar">
-              <img src="/assets/mai-avatar.png" alt="Mai Abdalla" />
+              <img src={`${import.meta.env.BASE_URL}assets/mai-avatar.png`} alt="Mai Abdalla" />
               <div className="experience-badge">
                 <i className="fa-brands fa-flutter flutter-icon-badge"></i>
                 <span>Flutter Expert</span>
