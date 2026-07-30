@@ -8,7 +8,7 @@ export const Experience: React.FC = () => {
     <section id="experience" className="section experience-section">
       <div className="container">
         <div className="section-header center">
-          <h2 className="section-title">Professional <span className="gradient-text">Experience</span></h2>
+          <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t('experience-title') }} />
           <div className="section-line mx-auto"></div>
         </div>
 

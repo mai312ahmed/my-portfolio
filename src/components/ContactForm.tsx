@@ -45,7 +45,7 @@ export const ContactForm: React.FC = () => {
     <section id="contact" className="section contact-section">
       <div className="container">
         <div className="section-header center">
-          <h2 className="section-title">Get In <span className="gradient-text">Touch</span></h2>
+          <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t('contact-title') }} />
           <div className="section-line mx-auto"></div>
           <p className="section-subtitle">{t('contact-subtitle')}</p>
         </div>
