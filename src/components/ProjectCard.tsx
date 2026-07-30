@@ -12,13 +12,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { language, tObject } = useLanguage();
 
   // Localized properties
-  const title = tObject(project.title, 'Untitled');
-  const description = tObject(project.description, '');
-  const statusText = tObject(project.status, '');
-  const languagesText = project.languages ? tObject(project.languages, '') : '';
+  const rawTitle = tObject(project.title, 'Untitled');
+  const title = typeof rawTitle === 'string' ? rawTitle : 'Untitled';
+
+  const rawDesc = tObject(project.description, '');
+  const description = typeof rawDesc === 'string' ? rawDesc : '';
+
+  const rawStatus = tObject(project.status, '');
+  const statusText = typeof rawStatus === 'string' ? rawStatus : '';
+
+  const rawLang = project.languages ? tObject(project.languages, '') : '';
+  const languagesText = typeof rawLang === 'string' ? rawLang : '';
   
-  const techArray = tObject(project.technologies, []) as string[];
-  const tags = project.tags || [];
+  const rawTechArray = tObject(project.technologies, []);
+  const techArray = Array.isArray(rawTechArray) ? (rawTechArray as string[]) : [];
+  const tags = Array.isArray(project.tags) ? project.tags : [];
   const technologies = techArray.length > 0 ? techArray : tags;
 
   // Resolve thumbnail content

@@ -65,14 +65,24 @@ export const ProjectDetails: React.FC = () => {
   }
 
   // Localized fields
-  const title = tObject(project.title, 'Untitled');
-  const description = tObject(project.description, '');
-  const features = (tObject(project.features, []) as string[]) || [];
-  const languages = tObject(project.languages, '');
-  const status = tObject(project.status, 'Active');
+  const rawTitle = tObject(project.title, 'Untitled');
+  const title = typeof rawTitle === 'string' ? rawTitle : 'Untitled';
 
-  const techArray = tObject(project.technologies, []) as string[];
-  const tags = project.tags || [];
+  const rawDesc = tObject(project.description, '');
+  const description = typeof rawDesc === 'string' ? rawDesc : '';
+
+  const rawFeats = tObject(project.features, []);
+  const features = Array.isArray(rawFeats) ? (rawFeats as string[]) : [];
+
+  const rawLang = tObject(project.languages, '');
+  const languages = typeof rawLang === 'string' ? rawLang : '';
+
+  const rawStatus = tObject(project.status, 'Active');
+  const status = typeof rawStatus === 'string' ? rawStatus : 'Active';
+
+  const rawTech = tObject(project.technologies, []);
+  const techArray = Array.isArray(rawTech) ? (rawTech as string[]) : [];
+  const tags = Array.isArray(project.tags) ? project.tags : [];
   const technologies = techArray.length > 0 ? techArray : tags;
 
   const images = project.imageUrls || [];

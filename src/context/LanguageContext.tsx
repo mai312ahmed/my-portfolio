@@ -42,17 +42,23 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // Helper to translate database objects that might be localized {en: "...", ar: "..."} or just a simple type
   function tObject<T>(obj: T | Localized<T> | undefined, fallback?: T): T {
-    if (obj === undefined || obj === null) return fallback as T;
+    if (obj === undefined || obj === null) return (fallback !== undefined ? fallback : '') as unknown as T;
     
-    if (typeof obj === 'object' && obj !== null) {
-      const localizedObj = obj as Localized<T>;
-      // If we have the current language, return it. Otherwise try english, otherwise try the first key
-      if (localizedObj[language] !== undefined && (localizedObj[language] as any) !== '') {
-        return localizedObj[language];
+    if (typeof obj === 'object' && obj !== null && !Array.isArray(obj)) {
+      const localizedObj = obj as any;
+      const currentVal = localizedObj[language];
+      if (currentVal !== undefined && currentVal !== null && currentVal !== '' && !(Array.isArray(currentVal) && currentVal.length === 0)) {
+        return currentVal;
       }
-      if (localizedObj['en'] !== undefined && (localizedObj['en'] as any) !== '') {
-        return localizedObj['en'];
+      const enVal = localizedObj['en'];
+      if (enVal !== undefined && enVal !== null && enVal !== '' && !(Array.isArray(enVal) && enVal.length === 0)) {
+        return enVal;
       }
+      const arVal = localizedObj['ar'];
+      if (arVal !== undefined && arVal !== null && arVal !== '' && !(Array.isArray(arVal) && arVal.length === 0)) {
+        return arVal;
+      }
+      return (fallback !== undefined ? fallback : '') as unknown as T;
     }
     return obj as T;
   }
